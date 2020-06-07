@@ -1,0 +1,14 @@
+name: test-behaviour
+
+on:
+  push:
+    paths:
+    - 'foo/**'
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo
+      run: echo "hello world"
